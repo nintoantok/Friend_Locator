@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEE0" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_sample1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ok"
+        android:clickable="true"
+        android:onClick="okay"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/friend_locator"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#009ACD"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/created_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/app_name"
+        android:layout_centerVertical="true"
+        android:text="@string/app_created"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#009ACD"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/creators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/created_by"
+        android:layout_below="@+id/created_by"
+        android:text="@string/names"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#009ACD"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</RelativeLayout>
